@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class GateWayRoutesConfig {
-//    @Bean
+    @Bean
     public RouteLocator myRouteLocator02(RouteLocatorBuilder routeLocatorBuilder) {
 //        routes: # 配置路由  List<RouteDefinition> routes
 //                - id: member_route01 # 路由的id，唯一
@@ -19,7 +19,7 @@ public class GateWayRoutesConfig {
 //        predicates: #断言，可以有多种形式的断言
 //                - Path=/member/getMemberById/**
         RouteLocatorBuilder.Builder routes = routeLocatorBuilder.routes();
-        RouteLocator memberRoute02 = routes.route("member_route02", r -> r.path("/member/getMemberById/**").uri("http://localhost:10000 ")).build();
+        RouteLocator memberRoute02 = routes.route("member_route02", r -> r.path("/member/getMemberById/**").uri("http://localhost:10000")).build();
         return memberRoute02;
     }
 }
