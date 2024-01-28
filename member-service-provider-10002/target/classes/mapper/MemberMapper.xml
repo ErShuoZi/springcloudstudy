@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="springcloud.dao.MemberDao">
+    <resultMap id="MemberResultMap" type="Member">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="pwd" property="pwd" jdbcType="VARCHAR" />
+        <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+        <result column="gender" property="gender" jdbcType="TINYINT" />
+    </resultMap>
+    <select id="queryMemberById" parameterType="Long" resultMap="MemberResultMap">
+        SELECT * from `member` where `id` = #{id}
+    </select>
+
+    <insert id="save" parameterType="Member" useGeneratedKeys="true"
+            keyProperty="id">
+        INSERT into member(NAME,pwd,mobile,email,gender)
+        values(#{name}, md5(#{pwd}), #{mobile},#{email}, #{gender});
+    </insert>
+</mapper>

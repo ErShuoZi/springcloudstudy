@@ -1,0 +1,24 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: eureka-server-90001
+
+
+#配置Eureka-server
+eureka:
+  instance:
+    hostname: eureka9001.com #服务实例名
+    prefer-ip-address: false
+  client:
+    register-with-eureka: false   # 配置不向注册中心注册自己
+    fetch-registry: false         # 表示自己就是注册中心，作用是维护服务实例,不需要检索服务
+    service-url:
+      defaultZone: http://eureka9002.com:9002/eureka/ # 设置与 Eureka Server 交互的模块，查询服务和注册服务，都需要依赖这个地址
+#  server:
+    # 配置禁用自我保护模式
+#    enable-self-preservation: false
+    # 设置超时时间 2秒，两秒内搜索不到心跳包,则认为超时
+#    eviction-interval-timer-in-ms: 2000
+
+

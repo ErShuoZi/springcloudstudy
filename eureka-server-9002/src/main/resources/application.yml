@@ -1,0 +1,17 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: eureka-server-90002
+eureka:
+  instance:
+    hostname: eureka9002.com
+    prefer-ip-address: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      # 这里注册到Eureka9001注册中心Server
+      defaultZone: http://eureka9001.com:9001/eureka/
+
+

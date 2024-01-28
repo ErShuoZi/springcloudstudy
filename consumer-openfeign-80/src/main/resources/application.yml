@@ -1,0 +1,33 @@
+server:
+  port: 80
+spring:
+  application:
+    name: consumer-openfeign-80
+eureka:
+  client:
+    register-with-eureka: true  # 将自己注册到Eureka Server
+    fetch-registry: true        # 要从Eureka Server 拉取
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka,http://eureka9002.com:9002/eureka
+
+    # 对MemberFeignService 接口调用过程打印信息 - Debug
+#logging:
+#  level:
+#    springcloud.service.MemberFeignService: debug
+
+
+# 设置超时时间 openfeign默认支持ribbon
+#ribbon:
+#   # 设置客户端超时时间
+#  ReadTimeout: 8000
+#  # 客户端与服务端连接所用的时间
+#  ConnectionTimeout: 8000
+#feign:
+#  client:
+#    config:
+#      default:
+#        connect-timeout: 8000
+#        read-timeout: 8000
+
+
+
