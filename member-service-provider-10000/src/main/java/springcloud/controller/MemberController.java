@@ -38,11 +38,11 @@ public class MemberController {
     public Result getMemberById(@PathVariable("id") Long id){
 
         //模拟超时
-        try {
-            TimeUnit.MILLISECONDS.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            TimeUnit.MILLISECONDS.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         Member member = memberService.queryMemberById(id);
         if(member != null) {
             //添加成功

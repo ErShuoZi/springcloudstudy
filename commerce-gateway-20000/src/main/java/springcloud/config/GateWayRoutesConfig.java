@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class GateWayRoutesConfig {
-    @Bean
+//    @Bean
     public RouteLocator myRouteLocator02(RouteLocatorBuilder routeLocatorBuilder) {
 //        routes: # 配置路由  List<RouteDefinition> routes
 //                - id: member_route01 # 路由的id，唯一

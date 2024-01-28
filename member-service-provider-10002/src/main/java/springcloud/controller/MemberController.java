@@ -36,11 +36,11 @@ public class MemberController {
     //如果前端是以表单形式提交则不需要@RequestBody
     //如果前端以json格式提交，则需要@RequestBody
     public Result getMemberById(@PathVariable("id") Long id) {
-        try {
-            TimeUnit.MILLISECONDS.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            TimeUnit.MILLISECONDS.sleep(5000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         Member member = memberService.queryMemberById(id);
         if (member != null) {
             //添加成功

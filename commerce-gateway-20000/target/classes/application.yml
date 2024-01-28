@@ -6,14 +6,16 @@ spring:
   cloud:
     gateway:
       routes: # 配置路由  List<RouteDefinition> routes
-#        - id: member_route01 # 路由的id，唯一
-#          # 匹配后提供服务的路由地址，也可是外网
-#          # 如果根据路径匹配成功，最终转发的url:url = http://localhost:10000/member/getMemberById/**
-#          # 如不成功则返回404错误
-#          # uri 要从服务注册中心获取
+        - id: member_route01 # 路由的id，唯一
+          # 匹配后提供服务的路由地址，也可是外网
+          # 如果根据路径匹配成功，最终转发的url:url = http://localhost:10000/member/getMemberById/**
+          # 如不成功则返回404错误
+          # uri 要从服务注册中心获取
 #          uri: http://localhost:10000 # 服务提供方ip和端口
-#          predicates: #断言，可以有多种形式的断言
-#            - Path=/member/getMemberById/**
+          # 动态路由  lb:协议名，member-service-provider:注册到Eureka Server 服务名(小写)
+          uri: lb://member-service-provider # 服务提供方ip和端口
+          predicates: #断言，可以有多种形式的断言
+            - Path=/member/getMemberById/**
 
 # 配置Eureka
 eureka:

@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="yarn配置网关">
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="配置类配置网关">
+      <change afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/config/RibbonRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/test/java/springcloud/T1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/CommerceGateWayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/CommerceGateWayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/config/GateWayRoutesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/config/GateWayRoutesConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/springcloud/config/GateWayRoutesConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/springcloud/config/GateWayRoutesConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,44 +51,45 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.MemberApplicationTest.addMember.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MemberApplicationTest.queryMemberById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.e_common_api [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CommerceGateWayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConsumerOpenFeignApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication2.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Member02Application (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Member02Application.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberConsumerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ershuozi/Desktop/Java/springcloud&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.T1.executor": "Run",
+    "JUnit.MemberApplicationTest.addMember.executor": "Run",
+    "JUnit.MemberApplicationTest.queryMemberById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.e_common_api [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CommerceGateWayApplication.executor": "Run",
+    "Spring Boot.ConsumerOpenFeignApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication2.executor": "Run",
+    "Spring Boot.Member02Application (1).executor": "Run",
+    "Spring Boot.Member02Application.executor": "Run",
+    "Spring Boot.MemberApplication.executor": "Run",
+    "Spring Boot.MemberConsumerApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "zulu-1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ershuozi/Desktop/Java/springcloud",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -105,7 +111,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MemberApplication">
+  <component name="RunManager" selected="Spring Boot.Member02Application">
+    <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="springcloud.T1" />
+      <module name="commerce-gateway-20000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommerceGateWayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="commerce-gateway-20000" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.CommerceGateWayApplication" />
@@ -119,35 +138,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsumerOpenFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="consumer-openfeign-80" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.ConsumerOpenFeignApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka-server-9001" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EurekaServerApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka-server-9002" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.EurekaServerApplication2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Member02Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="member-service-provider-10002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.Member02Application" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="springcloud.*" />
@@ -172,19 +178,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.T1" />
+      <item itemvalue="Spring Boot.Member02Application" />
       <item itemvalue="Spring Boot.CommerceGateWayApplication" />
-      <item itemvalue="Spring Boot.ConsumerOpenFeignApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication2" />
       <item itemvalue="Spring Boot.MemberApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CommerceGateWayApplication" />
+        <item itemvalue="Spring Boot.Member02Application" />
         <item itemvalue="Spring Boot.MemberApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication2" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Spring Boot.ConsumerOpenFeignApplication" />
+        <item itemvalue="Application.T1" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +228,7 @@
       <workItem from="1706414497880" duration="89000" />
       <workItem from="1706414592656" duration="102000" />
       <workItem from="1706414701551" duration="214000" />
-      <workItem from="1706415120391" duration="1001000" />
+      <workItem from="1706415120391" duration="4911000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -328,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706415564063</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="配置类配置网关">
+      <option name="closed" value="true" />
+      <created>1706416393926</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706416393926</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,9 +372,9 @@
     <MESSAGE value="OpenFeign 配置日志" />
     <MESSAGE value="OpenFeign 配置超时时间" />
     <MESSAGE value="yam配置网关" />
-    <MESSAGE value="配置类配置网关" />
     <MESSAGE value="yarn配置网关" />
-    <option name="LAST_COMMIT_MESSAGE" value="yarn配置网关" />
+    <MESSAGE value="配置类配置网关" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置类配置网关" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
