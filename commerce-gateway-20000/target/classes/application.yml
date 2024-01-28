@@ -16,7 +16,13 @@ spring:
           uri: lb://member-service-provider # 服务提供方ip和端口
           predicates: #断言，可以有多种形式的断言
             - Path=/member/getMemberById/**
-
+#            - After=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+#            - Before=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+#            - Between=2024-01-28T13:57:03.955+08:00[Asia/Shanghai],2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+#            - Cookie=user,zhangsan
+#            - Header=X-Request-Id,hello
+#            - Host=**.ls.**
+            - Method=GET,POST
 # 配置Eureka
 eureka:
   instance:
