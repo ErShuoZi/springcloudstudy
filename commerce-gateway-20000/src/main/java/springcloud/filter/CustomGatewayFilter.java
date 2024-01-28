@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-@Component
+//@Component
 public class CustomGatewayFilter implements GlobalFilter, Ordered {
     //过滤业务
     @Override

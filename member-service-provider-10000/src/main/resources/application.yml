@@ -9,7 +9,12 @@ spring:
     url: jdbc:mysql://localhost:3306/e_commerce_center_db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 88888888
-
+    # 配置Sleuth 和ZipKin
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1  # 采样率 在0 - 1 之间  1: 全部采集  0:
 # 配置mybatis
 mybatis:
   mapper-locations: classpath:mapper/*.xml   # 指定mapper.xml文件位置
@@ -30,4 +35,9 @@ eureka:
 #    lease-renewal-interval-in-seconds: 1
 #      # 服务端收到最后一次心跳后等待时间上限 单位是秒 默认90s
 #    lease-expiration-duration-in-seconds: 2
+
+
+
+
+
 

@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="网关filter">
-      <change afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/filter/CustomGatewayFilter.java" afterDir="false" />
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="自定义全局filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/filter/CustomGatewayFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/java/springcloud/filter/CustomGatewayFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-consumer-80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-consumer-80/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-consumer-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-consumer-80/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-consumer-80/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-consumer-80/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/target/classes/springcloud/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/target/classes/springcloud/controller/MemberController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.MemberConsumerApplication">
     <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springcloud.T1" />
       <module name="commerce-gateway-20000" />
@@ -198,9 +205,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="member-service-consumer-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.MemberConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.T1" />
       <item itemvalue="Application.T2" />
+      <item itemvalue="Spring Boot.MemberConsumerApplication" />
       <item itemvalue="Spring Boot.CommerceGateWayApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.Member02Application" />
@@ -209,8 +230,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
+        <item itemvalue="Spring Boot.MemberConsumerApplication" />
         <item itemvalue="Spring Boot.MemberApplication" />
+        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
         <item itemvalue="Spring Boot.Member02Application" />
         <item itemvalue="Spring Boot.EurekaServerApplication2" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -254,7 +276,7 @@
       <workItem from="1706414592656" duration="102000" />
       <workItem from="1706414701551" duration="214000" />
       <workItem from="1706415120391" duration="8720000" />
-      <workItem from="1706426644113" duration="5614000" />
+      <workItem from="1706426644113" duration="10866000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -392,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706429764539</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="自定义全局filter">
+      <option name="closed" value="true" />
+      <created>1706432284822</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706432284822</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +457,8 @@
     <MESSAGE value="配置网关负载均衡" />
     <MESSAGE value="网关断言" />
     <MESSAGE value="网关filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="网关filter" />
+    <MESSAGE value="自定义全局filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义全局filter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

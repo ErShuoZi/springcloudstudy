@@ -80,6 +80,13 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <!--引入Sleuth + ZipKin 相关依赖-->
+        <!--spring-cloud-starter-zipkin默认继承了Sleuth-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
