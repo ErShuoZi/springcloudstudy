@@ -25,14 +25,16 @@ spring:
           #            - Method=GET,POST
           #            - Query=email,正则表达式
           #            - RemoteAddr=127.0.0.1
-        - id: weight_hight
-          uri: http://weighthight.org
-          predicates:
-            - weight=group1,8
-        - id: weight_low
-          uri: http://weightlow.org
-          predicates:
-            - weight=group2,2
+#        - id: weight_hight
+#          uri: http://weighthight.org
+#          predicates:
+#            - weight=group1,8
+#        - id: weight_low
+#          uri: http://weightlow.org
+#          predicates:
+#            - weight=group2,2
+          filters:
+            - AddRequestParameter=color, blue
 
 # 配置Eureka
 eureka:

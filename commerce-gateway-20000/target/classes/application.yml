@@ -11,18 +11,31 @@ spring:
           # 如果根据路径匹配成功，最终转发的url:url = http://localhost:10000/member/getMemberById/**
           # 如不成功则返回404错误
           # uri 要从服务注册中心获取
-#          uri: http://localhost:10000 # 服务提供方ip和端口
+          #          uri: http://localhost:10000 # 服务提供方ip和端口
           # 动态路由  lb:协议名，member-service-provider:注册到Eureka Server 服务名(小写)
           uri: lb://member-service-provider # 服务提供方ip和端口
           predicates: #断言，可以有多种形式的断言
             - Path=/member/getMemberById/**
-#            - After=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
-#            - Before=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
-#            - Between=2024-01-28T13:57:03.955+08:00[Asia/Shanghai],2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
-#            - Cookie=user,zhangsan
-#            - Header=X-Request-Id,hello
-#            - Host=**.ls.**
-            - Method=GET,POST
+          #            - After=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+          #            - Before=2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+          #            - Between=2024-01-28T13:57:03.955+08:00[Asia/Shanghai],2024-01-28T13:57:03.955+08:00[Asia/Shanghai]
+          #            - Cookie=user,zhangsan
+          #            - Header=X-Request-Id,hello
+          #            - Host=**.ls.**
+          #            - Method=GET,POST
+          #            - Query=email,正则表达式
+          #            - RemoteAddr=127.0.0.1
+#        - id: weight_hight
+#          uri: http://weighthight.org
+#          predicates:
+#            - weight=group1,8
+#        - id: weight_low
+#          uri: http://weightlow.org
+#          predicates:
+#            - weight=group2,2
+          filters:
+            - AddRequestParameter=color, blue
+
 # 配置Eureka
 eureka:
   instance:

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="配置网关负载均衡">
-      <change afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/test/java/springcloud/T2.java" afterDir="false" />
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="网关断言">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/commerce-gateway-20000/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/target/classes/springcloud/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/target/classes/springcloud/controller/MemberController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,8 +212,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
         <item itemvalue="Spring Boot.MemberApplication" />
+        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
         <item itemvalue="Spring Boot.Member02Application" />
         <item itemvalue="Spring Boot.EurekaServerApplication2" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -256,7 +257,7 @@
       <workItem from="1706414592656" duration="102000" />
       <workItem from="1706414701551" duration="214000" />
       <workItem from="1706415120391" duration="8720000" />
-      <workItem from="1706426644113" duration="1735000" />
+      <workItem from="1706426644113" duration="2997000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -378,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706420171153</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="网关断言">
+      <option name="closed" value="true" />
+      <created>1706428563501</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706428563502</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,7 +420,8 @@
     <MESSAGE value="yarn配置网关" />
     <MESSAGE value="配置类配置网关" />
     <MESSAGE value="配置网关负载均衡" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置网关负载均衡" />
+    <MESSAGE value="网关断言" />
+    <option name="LAST_COMMIT_MESSAGE" value="网关断言" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

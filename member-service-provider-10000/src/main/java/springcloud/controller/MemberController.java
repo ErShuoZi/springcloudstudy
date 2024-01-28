@@ -7,6 +7,7 @@ import springcloud.entity.Result;
 import springcloud.service.MemberService;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
@@ -35,8 +36,8 @@ public class MemberController {
     @GetMapping("/member/getMemberById/{id}")
     //如果前端是以表单形式提交则不需要@RequestBody
     //如果前端以json格式提交，则需要@RequestBody
-    public Result getMemberById(@PathVariable("id") Long id){
-
+    public Result getMemberById(@PathVariable("id") Long id, HttpServletRequest request){
+        String color = request.getParameter("color");
         //模拟超时
 //        try {
 //            TimeUnit.MILLISECONDS.sleep(5000);
@@ -46,7 +47,7 @@ public class MemberController {
         Member member = memberService.queryMemberById(id);
         if(member != null) {
             //添加成功
-            return Result.success("查询成功-provider-10000",member);
+            return Result.success("查询成功-provider-10000-color" + color,member);
         } else {
             return  Result.error("402","查询失败");
         }
