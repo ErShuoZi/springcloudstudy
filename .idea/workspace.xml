@@ -4,35 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="ZipKin + Sleuth 路链监控">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/MemberNacosConsumerApplication80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/config/CustomizationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/config/RibbonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/controller/MemberConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/MemberNacosApplication10004.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/dao/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/MemberNacosApplication10006.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/dao/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/service/impl/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="Nacos配置服务提供者">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-service-provider-10000/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-10000/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/MemberNacosConsumerApplication80.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/MemberNacosConsumerApplication80.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/config/RibbonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/config/RibbonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/controller/MemberConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java/springcloud/controller/MemberConsumerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +76,9 @@
     "Spring Boot.MemberApplication.executor": "Run",
     "Spring Boot.MemberConsumerApplication.executor": "Run",
     "Spring Boot.MemberNacosApplication.executor": "Run",
+    "Spring Boot.MemberNacosApplication10004.executor": "Run",
     "Spring Boot.MemberNacosApplication10006.executor": "Run",
+    "Spring Boot.MemberNacosConsumerApplication80.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "zulu-1.8",
     "kotlin-language-version-configured": "true",
@@ -137,7 +118,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MemberNacosApplication10006">
+  <component name="RunManager" selected="Spring Boot.MemberNacosConsumerApplication80">
     <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springcloud.T1" />
       <module name="commerce-gateway-20000" />
@@ -268,11 +249,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MemberNacosConsumerApplication80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="member-service-nacos-consumer-80" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.MemberNacosConsumerApplication80" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.T1" />
       <item itemvalue="Application.T2" />
       <item itemvalue="Spring Boot.MemberNacosApplication10004" />
       <item itemvalue="Spring Boot.MemberNacosApplication10006" />
+      <item itemvalue="Spring Boot.MemberNacosConsumerApplication80" />
       <item itemvalue="Spring Boot.MemberConsumerApplication" />
       <item itemvalue="Spring Boot.CommerceGateWayApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -282,14 +277,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.MemberNacosConsumerApplication80" />
         <item itemvalue="Spring Boot.MemberNacosApplication10006" />
         <item itemvalue="Spring Boot.MemberNacosApplication10004" />
         <item itemvalue="Spring Boot.MemberApplication" />
-        <item itemvalue="Spring Boot.MemberConsumerApplication" />
-        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
-        <item itemvalue="Spring Boot.Member02Application" />
         <item itemvalue="Spring Boot.EurekaServerApplication2" />
+        <item itemvalue="Spring Boot.Member02Application" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.CommerceGateWayApplication" />
+        <item itemvalue="Spring Boot.MemberConsumerApplication" />
         <item itemvalue="Application.T2" />
         <item itemvalue="Application.T1" />
       </list>
@@ -331,7 +327,7 @@
       <workItem from="1706414701551" duration="214000" />
       <workItem from="1706415120391" duration="8720000" />
       <workItem from="1706426644113" duration="10866000" />
-      <workItem from="1706440525823" duration="7728000" />
+      <workItem from="1706440525823" duration="10189000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -485,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706440613627</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Nacos配置服务提供者">
+      <option name="closed" value="true" />
+      <created>1706496480581</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1706496480581</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +526,8 @@
     <MESSAGE value="网关filter" />
     <MESSAGE value="自定义全局filter" />
     <MESSAGE value="ZipKin + Sleuth 路链监控" />
-    <option name="LAST_COMMIT_MESSAGE" value="ZipKin + Sleuth 路链监控" />
+    <MESSAGE value="Nacos配置服务提供者" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nacos配置服务提供者" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

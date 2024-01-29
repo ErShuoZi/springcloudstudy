@@ -1,0 +1,10 @@
+server:
+  port: 80
+spring:
+  application:
+    name: MEMBER-SERVICE-NACOS-CONSUMER-80
+    # 配置nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848

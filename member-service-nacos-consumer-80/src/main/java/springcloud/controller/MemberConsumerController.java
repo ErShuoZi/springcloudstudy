@@ -31,19 +31,19 @@ public class MemberConsumerController {
     //目前有两个Availability Zones   192.168.18.24:member-service-provider:10000 , 192.168.18.24:member-service-provider:10002
     //需要增加注解@LoadBalanced 赋予 restTemplate 负载均衡的能力
 
-    public static final String MEMBER_SERVICE_PROVIDER = "http://MEMBER-SERVICE-PROVIDER";
+    public static final String MEMBER_SERVICE_PROVIDER_NACOS = "http://MEMBER-SERVICE-NACOS-PROVIDER";
 
 
     @PostMapping("/member/consumer/save")
     public Result<Member> save(Member member) {
         log.info("service-consumer-memeber={}",member);
-        return restTemplate.postForObject(MEMBER_SERVICE_PROVIDER + "/member/save", member, Result.class);
+        return restTemplate.postForObject(MEMBER_SERVICE_PROVIDER_NACOS + "/member/save", member, Result.class);
     }
 
 
-    @GetMapping("/member/consumer/getMemberById/{id}")
+    @GetMapping("/member/nacos/consumer/getMemberById/{id}")
     public Result<Member> getMemberById(@PathVariable("id") Long id) {
-        return restTemplate.getForObject(MEMBER_SERVICE_PROVIDER + "/member/getMemberById/" + id,Result.class);
+        return restTemplate.getForObject(MEMBER_SERVICE_PROVIDER_NACOS + "/member/getMemberById/" + id,Result.class);
     }
 
 

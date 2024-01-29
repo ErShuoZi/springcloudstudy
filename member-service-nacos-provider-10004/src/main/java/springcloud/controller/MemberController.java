@@ -47,7 +47,7 @@ public class MemberController {
         if(member != null) {
             //添加成功
 //            return Result.success("查询成功-provider-10000-color" + color,member);
-            return Result.success("查询成功-provider-Nacos-10000",member);
+            return Result.success("查询成功-provider-Nacos-10004",member);
         } else {
             return  Result.error("402","查询失败");
         }
