@@ -19,14 +19,14 @@ public class MemberController {
     @PostMapping("/member/save")
     //如果前端是以表单形式提交则不需要@RequestBody
     //如果前端以json格式提交，则需要@RequestBody
-    public Result save(@RequestBody Member member){
-        log.info("service-provider-memeber={}",member);
+    public Result save(@RequestBody Member member) {
+        log.info("service-provider-memeber={}", member);
         int effected = memberService.save(member);
-        if(effected > 0) {
+        if (effected > 0) {
             //添加成功
-           return Result.success("添加会员成功",effected);
+            return Result.success("添加会员成功", effected);
         } else {
-            return  Result.error("401","添加会员失败");
+            return Result.error("401", "添加会员失败");
         }
     }
 
@@ -52,5 +52,21 @@ public class MemberController {
             return  Result.error("402","查询失败");
         }
     }
+
+
+//    @GetMapping(value = "/member/getMemberById", params = "id")
+//    //如果前端是以表单形式提交则不需要@RequestBody
+//    //如果前端以json格式提交，则需要@RequestBody
+//    public Result getMemberById(Long id) {
+//
+//        Member member = memberService.queryMemberById(id);
+//        if (member != null) {
+//            //添加成功
+////            return Result.success("查询成功-provider-10000-color" + color,member);
+//            return Result.success("查询成功-provider-Nacos-10004", member);
+//        } else {
+//            return Result.error("402", "查询失败");
+//        }
+//    }
 
 }

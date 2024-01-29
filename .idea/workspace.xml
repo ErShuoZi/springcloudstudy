@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="Nacos配置隔离(配置NameSpace)">
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="集成Sentinel监控">
+      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/CoustonUrlCleaner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-service-nacos-provider-10004/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +341,7 @@
       <workItem from="1706426644113" duration="10866000" />
       <workItem from="1706440525823" duration="16185000" />
       <workItem from="1706510700438" duration="7448000" />
-      <workItem from="1706520897801" duration="2254000" />
+      <workItem from="1706520897801" duration="5696000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -543,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706516807029</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="集成Sentinel监控">
+      <option name="closed" value="true" />
+      <created>1706523209384</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1706523209384</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +594,8 @@
     <MESSAGE value="Nacos配置自动刷新配置信息" />
     <MESSAGE value="Nacos配置隔离(配置分组)" />
     <MESSAGE value="Nacos配置隔离(配置NameSpace)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nacos配置隔离(配置NameSpace)" />
+    <MESSAGE value="集成Sentinel监控" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成Sentinel监控" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
