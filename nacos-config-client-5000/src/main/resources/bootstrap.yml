@@ -19,3 +19,5 @@ spring:
         #spring.application.name : 对应的是配置中心的DataID
         #在application.yml：配置spring.profiles.active = dev 该dev参数会与本文件(bootstrap.yaml)中的spring.application.name 进行拼接
         # config.file-extension: 配置文件的后缀名
+#        group: order  # 指定获取order组的配置
+        group: seckill  # 指定获取秒杀组的配置
