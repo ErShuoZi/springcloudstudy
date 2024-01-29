@@ -13,6 +13,7 @@
         <module name="member-service-provider-nacos-10006" />
         <module name="member-service-nacos-consumer-80" />
         <module name="member-service-consumer-80" />
+        <module name="nacos-config-client-5000" />
         <module name="commerce-gateway-20000" />
         <module name="eureka-server-9002" />
         <module name="eureka-server-9001" />

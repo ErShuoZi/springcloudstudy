@@ -1,0 +1,3 @@
+spring:
+  profiles:
+    active: dev # 指定环境 dev/test/prod
