@@ -1,25 +1,33 @@
-  server:
-    port: 10004
+server:
+  port: 10004
 
-  spring:
-    application:
-      name: MEMBER-SERVICE-NACOS-PROVIDER
-    datasource:
-      type: com.alibaba.druid.pool.DruidDataSource
-      url: jdbc:mysql://localhost:3306/e_commerce_center_db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
-      username: root
-      password: 88888888
-    cloud:
-      nacos:
-        discovery:
-          server-addr: localhost:8848
+spring:
+  application:
+    name: MEMBER-SERVICE-NACOS-PROVIDER
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/e_commerce_center_db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 88888888
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        # 集成Sentinel
+    sentinel:
+      transport:
+        dashboard: localhost:9999 #指定sentinel控制台地址
+        port: 8719 # 端口配置会在被监控的微服务对应的主机上启动HttpServer,该HttpServer会与Sentinel控制台进行交互
+        # 比如Sentinel添加了一个新的限流规则，会把规则数据push到该HttpServer，HttpServer接收,将该规则注册到Sentinel中
+        # 简单来说port指定被监控的微服务应用与Sentinel控制台监护的端口
+        # 默认端口 8719，如被占用，会自动从8719端口开始依次加一,直至发现没有被占用的端口,并启用
 
-  mybatis:
-    mapper-locations: classpath:mapper/*.xml
-    type-aliases-package: springcloud.entity
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: springcloud.entity
 
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: '*'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
