@@ -15,7 +15,6 @@ spring:
   sleuth:
     sampler:
       probability: 1  # 采样率 在0 - 1 之间  1: 全部采集  0:
-
 # 配置mybatis
 mybatis:
   mapper-locations: classpath:mapper/*.xml   # 指定mapper.xml文件位置

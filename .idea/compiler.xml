@@ -10,12 +10,18 @@
         <module name="member-service-provider-10002" />
         <module name="member-service-provider-10000" />
         <module name="e_common_api" />
+        <module name="member-service-provider-nacos-10006" />
+        <module name="member-service-nacos-consumer-80" />
         <module name="member-service-consumer-80" />
         <module name="commerce-gateway-20000" />
         <module name="eureka-server-9002" />
         <module name="eureka-server-9001" />
+        <module name="member-service-nacos-provider-10004" />
         <module name="consumer-openfeign-80" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="member-service-nacos-provider-10006" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

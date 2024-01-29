@@ -1,0 +1,25 @@
+  server:
+    port: 10006
+
+  spring:
+    application:
+      name: MEMBER-SERVICE-NACOS-PROVIDER
+    datasource:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://localhost:3306/e_commerce_center_db?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: 88888888
+    cloud:
+      nacos:
+        discovery:
+          server-addr: localhost:8848
+
+  mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: springcloud.entity
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: '*'
