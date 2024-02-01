@@ -20,6 +20,7 @@
         <module>member-service-provider-nacos-10006</module>
         <module>member-service-nacos-consumer-80</module>
         <module>nacos-config-client-5000</module>
+        <module>seata_storage_micro_service-10010</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
     <name>spring cloud</name>

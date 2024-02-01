@@ -8,6 +8,8 @@ import springcloud.service.MemberService;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @RestController
@@ -38,11 +40,12 @@ public class MemberController {
     public Result getMemberById(@PathVariable("id") Long id, HttpServletRequest request){
 //        String color = request.getParameter("color");
         //模拟超时
-//        try {
-//            TimeUnit.MILLISECONDS.sleep(5000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
+        try {
+            TimeUnit.MILLISECONDS.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("当前线程id=" + Thread.currentThread().getId() + "时间" + new Date());
         Member member = memberService.queryMemberById(id);
         if(member != null) {
             //添加成功
@@ -68,5 +71,22 @@ public class MemberController {
 //            return Result.error("402", "查询失败");
 //        }
 //    }
+
+
+    @GetMapping("/t1")
+    public Result t1() {
+       return Result.success("t1执行");
+    }
+
+    @GetMapping("/t2")
+    public Result t2() {
+        try {
+            TimeUnit.MILLISECONDS.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        log.info("执行t2()线程={}",Thread.currentThread().getId());
+        return Result.success("t2执行");
+    }
 
 }

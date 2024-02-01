@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="集成Sentinel监控">
-      <change afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/CoustonUrlCleaner.java" afterDir="false" />
+    <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="Sentinel资源清洗-流控">
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/config/DataSourceProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/controller/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/dao/StorageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/entity/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/service/storageServiceimpl/StorageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/mapper/StorageDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/registry.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,64 +60,64 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.T1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.T2.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MemberApplicationTest.addMember.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MemberApplicationTest.queryMemberById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.e_common_api [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CommerceGateWayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConsumerOpenFeignApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication2.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Member02Application (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.Member02Application.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberConsumerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberNacosApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberNacosApplication10004.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberNacosApplication10006.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MemberNacosConsumerApplication80.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.NacosConfigClientApplication5000.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ershuozi/Desktop/Java/springcloud/member-service-nacos-consumer-80/src/main/java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.T1.executor": "Run",
+    "Application.T2.executor": "Run",
+    "JUnit.MemberApplicationTest.addMember.executor": "Run",
+    "JUnit.MemberApplicationTest.queryMemberById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.e_common_api [clean,install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CommerceGateWayApplication.executor": "Run",
+    "Spring Boot.ConsumerOpenFeignApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication2.executor": "Run",
+    "Spring Boot.Member02Application (1).executor": "Run",
+    "Spring Boot.Member02Application.executor": "Run",
+    "Spring Boot.MemberApplication (1).executor": "Run",
+    "Spring Boot.MemberApplication.executor": "Run",
+    "Spring Boot.MemberConsumerApplication.executor": "Run",
+    "Spring Boot.MemberNacosApplication.executor": "Run",
+    "Spring Boot.MemberNacosApplication10004.executor": "Run",
+    "Spring Boot.MemberNacosApplication10006.executor": "Run",
+    "Spring Boot.MemberNacosConsumerApplication80.executor": "Run",
+    "Spring Boot.NacosConfigClientApplication5000.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "zulu-1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ershuozi/Desktop/Java/springcloud/seata_storage_micro_service-10010/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources" />
       <recent name="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java" />
       <recent name="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/resources" />
       <recent name="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java" />
       <recent name="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources" />
-      <recent name="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/java/springcloud" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,7 +355,10 @@
       <workItem from="1706426644113" duration="10866000" />
       <workItem from="1706440525823" duration="16185000" />
       <workItem from="1706510700438" duration="7448000" />
-      <workItem from="1706520897801" duration="5696000" />
+      <workItem from="1706520897801" duration="5835000" />
+      <workItem from="1706593020984" duration="5815000" />
+      <workItem from="1706698475802" duration="136000" />
+      <workItem from="1706744667405" duration="7413000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -551,7 +568,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706523209384</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Sentinel资源清洗-流控">
+      <option name="closed" value="true" />
+      <created>1706533840466</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1706533840466</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,7 +620,8 @@
     <MESSAGE value="Nacos配置隔离(配置分组)" />
     <MESSAGE value="Nacos配置隔离(配置NameSpace)" />
     <MESSAGE value="集成Sentinel监控" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成Sentinel监控" />
+    <MESSAGE value="Sentinel资源清洗-流控" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sentinel资源清洗-流控" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
