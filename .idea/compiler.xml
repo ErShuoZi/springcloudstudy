@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="member-service-nacos-consumer-80" />
+        <module name="seata_account_micro_service-10012" />
         <module name="member-service-consumer-80" />
         <module name="nacos-config-client-5000" />
         <module name="commerce-gateway-20000" />

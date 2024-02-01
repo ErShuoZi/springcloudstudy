@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05916aa0-2853-4221-aa27-54f174443c35" name="Changes" comment="seata使用-配置代理数据源">
-      <change afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/SeataStorageMicroServiceApplication10010.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/SeataAccountMicroServiceApplication10012.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/config/DataSourceProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/config/MyBatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/java/springcloud/service/AccountServiceimpl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/resources/file.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/resources/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/resources/registry.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/config/DataSourceProxyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/java/springcloud/config/DataSourceProxyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +90,12 @@
     "Spring Boot.MemberNacosApplication10006.executor": "Run",
     "Spring Boot.MemberNacosConsumerApplication80.executor": "Run",
     "Spring Boot.NacosConfigClientApplication5000.executor": "Run",
+    "Spring Boot.SeataAccountMicroServiceApplication10012.executor": "Run",
     "Spring Boot.SeataStorageMicroServiceApplication10010.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "zulu-1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ershuozi/Desktop/Java/springcloud/seata_storage_micro_service-10010/src/main/resources",
+    "last_opened_file_path": "/Users/ershuozi/Desktop/Java/springcloud/seata_account_micro_service-10012/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,11 +115,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/seata_account_micro_service-10012/src/main/resources" />
       <recent name="$PROJECT_DIR$/seata_storage_micro_service-10010/src/main/resources" />
       <recent name="$PROJECT_DIR$/member-service-nacos-consumer-80/src/main/java" />
       <recent name="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/resources" />
       <recent name="$PROJECT_DIR$/member-service-provider-nacos-10006/src/main/java" />
-      <recent name="$PROJECT_DIR$/member-service-nacos-provider-10004/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="springcloud.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,7 +134,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SeataStorageMicroServiceApplication10010">
+  <component name="RunManager" selected="Spring Boot.SeataAccountMicroServiceApplication10012">
     <configuration name="T1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="springcloud.T1" />
       <module name="commerce-gateway-20000" />
@@ -274,6 +291,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeataAccountMicroServiceApplication10012" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="seata_account_micro_service-10012" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.SeataAccountMicroServiceApplication10012" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SeataStorageMicroServiceApplication10010" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="seata_storage_micro_service-10010" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="springcloud.SeataStorageMicroServiceApplication10010" />
@@ -290,6 +320,7 @@
     <list>
       <item itemvalue="Application.T1" />
       <item itemvalue="Application.T2" />
+      <item itemvalue="Spring Boot.SeataAccountMicroServiceApplication10012" />
       <item itemvalue="Spring Boot.SeataStorageMicroServiceApplication10010" />
       <item itemvalue="Spring Boot.NacosConfigClientApplication5000" />
       <item itemvalue="Spring Boot.MemberNacosApplication10004" />
@@ -304,6 +335,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SeataAccountMicroServiceApplication10012" />
         <item itemvalue="Spring Boot.SeataStorageMicroServiceApplication10010" />
         <item itemvalue="Spring Boot.MemberNacosApplication10004" />
         <item itemvalue="Spring Boot.NacosConfigClientApplication5000" />
@@ -361,7 +393,7 @@
       <workItem from="1706520897801" duration="5835000" />
       <workItem from="1706593020984" duration="5815000" />
       <workItem from="1706698475802" duration="136000" />
-      <workItem from="1706744667405" duration="8757000" />
+      <workItem from="1706744667405" duration="12673000" />
     </task>
     <task id="LOCAL-00001" summary="springcloud study">
       <option name="closed" value="true" />
@@ -587,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706752402407</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="seata使用-配置代理数据源">
+      <option name="closed" value="true" />
+      <created>1706753756602</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1706753756602</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
