@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: seata_account_micro_service-10012
+    name: seata-account-micro-service-10012
   cloud:
     nacos:
       discovery:
@@ -13,7 +13,7 @@ spring:
         tx-service-group: ls_order_tx_group
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/account_micro_service
+    url: jdbc:mysql://localhost:3306/account_micro_service?useInformationSchema=false
     username: root
     password: 88888888
 

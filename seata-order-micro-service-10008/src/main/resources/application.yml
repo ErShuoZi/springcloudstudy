@@ -1,9 +1,9 @@
 server:
-  port: 10010
+  port: 10008
 
 spring:
   application:
-    name: seata-storage-micro-service-10010
+    name: seata-order-micro-service-10008
   cloud:
     alibaba:
       seata:
@@ -14,15 +14,18 @@ spring:
         # 指定Nacos地址
         server-addr: localhost:8848
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/storage_micro_service?useInformationSchema=false
-      username: root
-      password: 88888888
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/order_micro_service?useInformationSchema=false
+    username: root
+    password: 88888888
 # 配置seata 日志输出
 logging:
   level:
     io:
       seata: info
+    springcloud:
+      dao: debug
+
 
 mybatis:
-  mapperLocations: classpath:mapper/*.xml
+  mapper-locations: classpath:mapper/*.xml

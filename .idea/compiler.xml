@@ -14,6 +14,7 @@
         <module name="commerce-gateway-20000" />
         <module name="member-service-nacos-provider-10004" />
         <module name="consumer-openfeign-80" />
+        <module name="seata-order-micro-service-10008" />
         <module name="member-service-provider-10002" />
         <module name="member-service-provider-10000" />
         <module name="e_common_api" />
